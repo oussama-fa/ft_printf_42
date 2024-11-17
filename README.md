@@ -54,3 +54,11 @@ int main() {
     ft_printf("Hello, I'm a %s Student in : %d : %c\n", name, d, c, cc);
     return 0;
 }
+
+### Key Highlights:
+- **Brief Introduction**: I included a short description of the project and its purpose.
+- **Features Section**: Lists the format specifiers and functionality that you implemented.
+- **How to Use**: An example of how to use your `ft_printf` function in a simple C program.
+- **License and Contact**: This includes a simple MIT license and contact info for further communication.
+
+You can add additional sections or modify them as necessary based on your project specifics. Let me know if you need further tweaks!
