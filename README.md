@@ -13,7 +13,7 @@ The core idea behind this project was to build a minimalistic version of `printf
 Here are some screenshots of my project implementation:
 
 <img src="100.png" alt="Project Screenshot 1" width="500"/>
-<img src="corr.png" alt="Project Screenshot 2" width="700"/>
+<img src="corr.png" alt="Project Screenshot 2" width="900"/>
 
 ---
 
@@ -60,6 +60,3 @@ int main() {
 - **Brief Introduction**: I included a short description of the project and its purpose.
 - **Features Section**: Lists the format specifiers and functionality that you implemented.
 - **How to Use**: An example of how to use your `ft_printf` function in a simple C program.
-- **License and Contact**: This includes a simple MIT license and contact info for further communication.
-
-You can add additional sections or modify them as necessary based on your project specifics. Let me know if you need further tweaks!
