@@ -54,6 +54,7 @@ int main() {
     ft_printf("Hello, I'm a %s Student in : %d : %c\n", name, d, c, cc);
     return 0;
 }
+```
 
 ### Key Highlights:
 - **Brief Introduction**: I included a short description of the project and its purpose.
