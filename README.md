@@ -12,11 +12,9 @@ This project enhances skills in *variadic functions, buffer management*, and *fo
 
 Here are some screenshots of my project implementation:
 
-<img src="corr.png" alt="Project Screenshot 2" width="900"/>
-
 <div align="center">
-  <img src="100.png" alt="100 Successe" width="500"/>
-  <img src="corr.png" alt="MOULINETTE" width="900"/>
+	<img src="100.png" alt="100 Successe" width="500"/>
+	<img src="corr.png" alt="MOULINETTE" width="900"/>
 </div>
 
 ---
@@ -24,15 +22,15 @@ Here are some screenshots of my project implementation:
 ## Features
 
 - **Supports various format specifiers**:
-  - `%c`     :- Char
-  - `%s`     :- String
-  - `%p`     :- Pointer
-  - `%d`/`%i`: - Integer
-  - `%u`     :- Unsigned integer
-  - `%x`/`%X`: - Hexadecimal (lowercase/uppercase)
-  - `%%`     :- Print a percent symbol
+	- `%c`     :- Char
+	- `%s`     :- String
+	- `%p`     :- Pointer
+	- `%d`/`%i`: - Integer
+	- `%u`     :- Unsigned integer
+	- `%x`/`%X`: - Hexadecimal (lowercase/uppercase)
+	- `%%`     :- Print a percent symbol
 - **Support for width and precision**:
-  - Custom padding for fields and controlling the number of decimal places for floating point numbers.
+	- Custom padding for fields and controlling the number of decimal places for floating point numbers.
 - **Handling of variable arguments** using the `va_list`, `va_start`, `va_arg`, and `va_end` macros.
 - Efficient buffer management for optimized output performance.
 - Works without the standard printf library function (`<stdio.h>`).
@@ -64,13 +62,14 @@ The function `ft_printf` processes a format string and replaces format specifier
 ```c
 #include "ft_printf.h"
 
-int main() {
-  int d = 1337;
-  char c = 'K';
-  char cc = 'H';
+int main()
+{
+	int		d = 1337;
+	char	c = 'K';
+	char	cc = 'H';
 	char	*name = "Oussama FARAH";
-    ft_printf("Hello, I'm a %s Student in : %d : %c\n", name, d, c, cc);
-    return 0;
+	ft_printf("Hello, I'm a %s Student in : %d : %c\n", name, d, c, cc);
+	return (0);
 }
 ```
 Output :
@@ -102,7 +101,7 @@ make
 You find `libftprintf.a`
 
 ```bash
-  cc main.c libftprintf.a -o programe_name
+	cc main.c libftprintf.a -o programe_name
 ```
 
 3. Run the program:
