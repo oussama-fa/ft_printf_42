@@ -1,10 +1,10 @@
-# ft_printf_42 - Custom printf Implementation - ! no bonus
+# ft_printf - 42 School Project - 1337 KH
 
 ## Overview
 
-Welcome to **ft_printf_42**, my custom implementation of the `printf` function, developed as part of the **42 Network -> 1337 KH** curriculum. The project’s goal was to recreate the core functionality of the `printf` function from the C standard library while enhancing my understanding of **variable arguments**, **formatted output**, and **memory management** in C.
+**ft_printf** is a project from the **42 School** that requires re-implementing the standard `printf` function in C. The goal is to create a custom version of `printf` that handles various format specifiers while managing memory and output efficiently.
 
-The core idea behind this project was to build a minimalistic version of `printf`, capable of handling a variety of format specifiers like integers, strings, characters, and more, in a way that’s both efficient and flexible.
+This project enhances skills in *variadic functions, buffer management*, and *formatted output processing*.
 
 ---
 
@@ -12,34 +12,52 @@ The core idea behind this project was to build a minimalistic version of `printf
 
 Here are some screenshots of my project implementation:
 
-<img src="100.png" alt="Project Screenshot 1" width="500"/>
 <img src="corr.png" alt="Project Screenshot 2" width="900"/>
+
+<div align="center">
+  <img src="100.png" alt="100 Successe" width="500"/>
+  <img src="corr.png" alt="MOULINETTE" width="900"/>
+</div>
 
 ---
 
 ## Features
 
-- Implements basic format specifiers such as:
-  - `%c` - Char
-  - `%s` - String
-  - `%d`/`%i` - Integer
-  - `%u` - Unsigned integer
-  - `%x`/`%X` - Hexadecimal (lowercase/uppercase)
-  - `%p` - Pointer
-  - `%f` - Floating point (advanced challenge!)
-  
+- **Supports various format specifiers**:
+  - `%c`     :- Char
+  - `%s`     :- String
+  - `%p`     :- Pointer
+  - `%d`/`%i`: - Integer
+  - `%u`     :- Unsigned integer
+  - `%x`/`%X`: - Hexadecimal (lowercase/uppercase)
+  - `%%`     :- Print a percent symbol
 - **Support for width and precision**:
   - Custom padding for fields and controlling the number of decimal places for floating point numbers.
-
 - **Handling of variable arguments** using the `va_list`, `va_start`, `va_arg`, and `va_end` macros.
-
-- Supports advanced formatting like handling negative numbers, special characters, and even formatting pointers properly.
+- Efficient buffer management for optimized output performance.
+- Works without the standard printf library function (`<stdio.h>`).
 
 ---
 
-## How to Use
+## How It Works
 
-To use this custom `printf`, simply include the `ft_printf.h` header and link with the `ft_printf.c` source file.
+The function `ft_printf` processes a format string and replaces format specifiers with their corresponding values.
+
+---
+
+## Function Prototype:
+
+``` int ft_printf(const char *format, ...); ```
+
+---
+
+## Key Concepts Used:
+
+- Variadic functions with `<stdarg.h>`.
+- String and character manipulation.
+- Memory and buffer management.
+- Base conversion for hexadecimal output.
+---
 
 ### Example:
 
@@ -47,16 +65,55 @@ To use this custom `printf`, simply include the `ft_printf.h` header and link wi
 #include "ft_printf.h"
 
 int main() {
-    int d = 1337;
-    char c = 'K';
-    char cc = 'H';
+  int d = 1337;
+  char c = 'K';
+  char cc = 'H';
 	char	*name = "Oussama FARAH";
     ft_printf("Hello, I'm a %s Student in : %d : %c\n", name, d, c, cc);
     return 0;
 }
 ```
+Output :
+```bash
+Hello, I'm a Oussama FARAH Student in : 1337 : KH
+```
 
-### Key Highlights:
-- **Brief Introduction**: I included a short description of the project and its purpose.
-- **Features Section**: Lists the format specifiers and functionality that you implemented.
-- **How to Use**: An example of how to use your `ft_printf` function in a simple C program.
+---
+
+### Installation and Compilation:
+
+`BUFFER_SIZE:` The size of the buffer used for reading data from the file descriptor. You can set this as a compile-time macro
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/oussama-fa/ft_printf_42.git
+cd ft_printf_42
+```
+
+2. Compile the project:
+
+You must creat a main.c and `#include <ft_printf.h>`
+
+```bash
+make
+```
+
+You find `libftprintf.a`
+
+```bash
+  cc main.c libftprintf.a -o programe_name
+```
+
+3. Run the program:
+```bash
+./programe_name
+```
+
+---
+
+## Author
+*Oussama FARAH*
+
+- 📱 **Instagram**: [@oussama._.farah](https://www.instagram.com/oussama._.farah/)
+- ✉️ **Email**: [oussama05farah@gmail.com](mailto:oussama05farah@gmail.com)
