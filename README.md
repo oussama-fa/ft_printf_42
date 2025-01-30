@@ -64,7 +64,7 @@ The function `ft_printf` processes a format string and replaces format specifier
 
 int main()
 {
-	int		d = 1337;
+	int	d = 1337;
 	char	c = 'K';
 	char	cc = 'H';
 	char	*name = "Oussama FARAH";
@@ -81,8 +81,6 @@ Hello, I'm a Oussama FARAH Student in : 1337 : KH
 
 ### Installation and Compilation:
 
-`BUFFER_SIZE:` The size of the buffer used for reading data from the file descriptor. You can set this as a compile-time macro
-
 1. Clone the repository:
 
 ```bash
@@ -92,7 +90,7 @@ cd ft_printf_42
 
 2. Compile the project:
 
-You must creat a main.c and `#include <ft_printf.h>`
+You must creat a main.c and `#include "ft_printf.h"`
 
 ```bash
 make
@@ -101,7 +99,7 @@ make
 You find `libftprintf.a`
 
 ```bash
-	cc main.c libftprintf.a -o programe_name
+cc main.c libftprintf.a -o programe_name
 ```
 
 3. Run the program:
